@@ -1,0 +1,120 @@
+$color-price: rgb(48, 89, 110);
+
+.header_cart {
+    height: var(--height-header);
+    /* background-image: linear-gradient(0,#FD562D,#F73A28); */
+    // background-color: var(--primary-color);
+    /* position: fixed;
+    z-index: 1; */
+
+    .header_cart-item--top {
+        background-color: var(--primary-color);
+    }
+
+    .header_cart-item--bottom {
+        background-color: var(--white-color);
+
+        .header-with-search-cart {
+
+            .header__logo {
+
+                i {
+                    color: var(--primary-color);
+                }
+
+                span {
+                    color: var(--primary-color);
+                }
+            }
+
+            .header__icon-next {
+                font-size: 3rem;
+                margin-right: 35px;
+            }
+
+            .header__title-page {
+                font-size: 3rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.quantity__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        margin: 0 2px;
+        padding: 2px;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+    }
+
+    .add_quantity,
+    .sub_quantity {
+        background-color: #F5F5F5;
+        font-size: 0.9rem;
+        height: 50%;
+        cursor: pointer;
+    }
+
+
+}
+
+.product__cart-item {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+
+.payment__cart {
+
+    .payment__cart-item {
+        position: sticky;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 65px;
+        background-color: var(--white-color);
+
+        .action__cart {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            padding: 10px;
+
+            .payment__cart-title {
+                font-size: 3rem;
+                font-weight: 600;
+                margin-right: 5px;
+
+                span {
+                    line-height: 30px;
+                    font-weight: 300;
+                    font-size: 2rem;
+                    color: $color-price;
+
+                    span {
+                        margin-left: -5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .payment__cart-item::before {
+        background: linear-gradient(transparent, rgba(0, 0, 0, .06));
+        content: "";
+        height: 1.25rem;
+        left: 0;
+        position: absolute;
+        top: -1.25rem;
+        width: 100%;
+    }
+}

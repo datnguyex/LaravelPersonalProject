@@ -1,0 +1,173 @@
+.home__profile-img {
+  width: 100%;
+}
+
+.home__profile-info {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.home__profile-user {
+  display: flex;
+  padding: 15px 15px 0 15px;
+}
+
+.profile__img-item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  max-width: 40px;
+  max-height: 40px;
+  overflow: hidden;
+}
+.profile__img-item .img__profile {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.home_profile {
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+}
+
+.title__home-profile-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.home__profile--info {
+  display: flex;
+  justify-content: center;
+}
+.home__profile--info .form_profile .home__profile-item {
+  display: flex;
+  margin: 30px 0;
+}
+.home__profile--info .form_profile label {
+  min-width: 150px;
+  text-align: right;
+  display: block;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-right: 15px;
+  line-height: 30px;
+}
+.home__profile--info .form_profile input {
+  flex: 0.9;
+  flex-wrap: wrap;
+  height: 30px;
+  outline: var(--text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+.home__profile--info .form_profile .btn__save {
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__profile--info .form_profile .btn__save .save {
+  background-color: var(--primary-color);
+  min-width: 30px;
+  color: white;
+}
+.home__profile--info .form_profile .input__DOB {
+  display: flex;
+}
+.home__profile--info .form_profile .input__DOB input {
+  max-width: 28.888888%;
+  margin-right: 10px;
+}
+.home__profile--info .form_profile .input__DOB input:nth-child(3) {
+  margin-right: 0px;
+}
+.home__profile--info .form_profile .check__sex {
+  display: flex;
+  margin-top: -2px;
+}
+.home__profile--info .form_profile .check__sex .check {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.home__profile--info .form_profile .check__sex label {
+  text-align: left;
+  min-width: 20px;
+}
+
+.profile__edit {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__profile-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  margin-bottom: 10px;
+}
+
+.home__profile-edit_profile {
+  margin-top: 5px;
+}
+
+.home__profile-edit-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+}
+.home__profile-edit-img .img_edit {
+  border-radius: 50%;
+  min-width: 200px;
+  min-height: 200px;
+  display: block;
+  background-size: cover;
+}
+
+.list-item {
+  margin: 0;
+  padding-left: 11px;
+  list-style: none;
+  display: none;
+}
+.list-item li {
+  color: var(--text-color);
+}
+
+.title__category {
+  padding: 10px 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.title__category span {
+  color: black;
+  font-size: 1.6rem;
+}
+.title__category i {
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: var(--outline-color);
+}
+
+.dropdown {
+  display: block;
+}
+
+.form_profile--password {
+  width: 50%;
+}/*# sourceMappingURL=profile.css.map */

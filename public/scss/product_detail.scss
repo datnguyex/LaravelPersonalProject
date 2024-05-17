@@ -1,0 +1,204 @@
+
+@mixin btn--cart {
+    color: var(--outline-color);
+    border: 1px solid var(--outline-color);
+    padding: 0 5px;
+}
+
+.product__img-detail {
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 10px;
+    .img__product-detail {
+        width: 100%;
+    }
+}
+
+.title_product-detail {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    position: relative;
+
+    .product-detail-name {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    .product-detail-info {
+        display: flex;
+        font-size: 1.2rem;
+        color: var(--text-color);
+        cursor: pointer;
+
+        .product-detail-Evaluate {
+            margin: 0 8px;
+        }
+
+        .product-detail:hover {
+            color: (--outline-color);
+        }
+
+    }
+
+    .product-detail-price {
+        font-size: 2.4rem;
+        margin: 10px;
+        color: var(--outline-color);
+        filter: blur(6);
+    }
+
+    .product-detail-action {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .product-detail-quantities {
+            display: flex;
+            border: 1px solid rgba($color: #000000, $alpha: 0.2);
+            border-radius: 2px;
+            margin: 0 5px;
+
+            div {
+                border-collapse: collapse;
+                padding: 8px;
+                border: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+                i {
+                    cursor: pointer;
+                }
+            }
+
+            .product-detail-number {
+                font-size: 1.6rem;
+                line-height: 15px;
+                text-align: center;
+                max-height: 30px;
+                color: var(--outline-color);
+                min-width: 35px ;
+            }
+        }
+
+        .product-detail-sold {
+            color: var(--outline-color);
+            span {
+                margin-right: 3px;
+            }
+        }
+    }
+
+    .product-detail-rate {
+        font-size: 1rem;
+    }
+
+    .product-detail-cate {
+        font-size: 1.6rem;
+    }
+
+    .product-detail-des {
+        font-size: 1.4rem;
+        color: var(--text-color);
+    }
+
+    .product-detail-quantity {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .product-detail-button {
+        position: absolute;
+        bottom: 15px;
+    }
+
+    .btn--cart {
+        @include btn--cart;
+
+        i {
+            margin: 0 5px;
+        }
+    }
+
+    .btn--cart:hover {
+       opacity: 0.9;
+    }
+
+}
+
+
+.info__shop {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    position: relative;
+
+    .info__shop-item {
+        margin-left: 10px;
+        height: 100%;
+    }
+
+    .info__shop-img {
+        border-radius: 50%;
+        min-width: 100px;
+        max-height: 100px;
+    }
+
+    .info__shop-information {
+        height: 100%;
+        padding: 10px 0;
+    }
+
+    .info__shop-name {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .info__shop-phone {
+        color: var(--text-color);
+    }
+
+    .info__shop-btn {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .info__shop-btn__see {
+        @include btn--cart;
+        background-color: white;
+
+        i {
+            margin: 0 5px;
+        }
+    }
+
+    .info__shop-btn__chat {
+        @include btn--cart;
+        color: white;
+        i {
+            display: block;
+            margin: 0 5px;
+        }
+    }
+
+}
+
+.title__home-product {
+    width: 100%;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    min-height: 30px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    color: var(--outline-color);
+    padding: 10px;
+    position: sticky;
+    top: var(--height-header);
+    z-index: 1;
+    box-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.5);
+}
